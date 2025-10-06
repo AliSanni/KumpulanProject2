@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detail Espresso</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <style>
+      :root {
+         --primary: #b6895b;
+         --bg: #010101;
+      }
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #000;
+        color: #fff;
+      }
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.4rem 7%;
+        background-color: var(--primary);
+        border-bottom: 1px solid var(--primary);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 9999;
+      }
+
+      .navbar .navbar-logo {
+        font-size: 3rem;
+        font-weight: 700;
+        color: var(--bg);
+        font-style: italic;
+        text-decoration: none;
+        font-family: "Poppins";
+      }
+
+      .navbar .navbar-logo span {
+        color: whitesmoke;
+      }
+
+      .navbar .navbar-nav a {
+        color: var(--bg);
+        display: inline-block;
+        font-size: 1.3rem;
+        margin: 0 1rem;
+        text-decoration: none;
+        font-weight: 400;
+        font-family: "Poopins", bold;
+      }
+
+      .navbar .navbar-nav a:hover {
+        color: #6f4c3e;
+      }
+
+      .navbar .navbar-nav a::after {
+        content: "";
+        display: block;
+        padding-bottom: 0.5rem;
+        border-bottom: 0.1rem solid #6f4c3e;
+        transform: scaleX(0);
+        transition: 0.2s linear;
+      }
+
+      .navbar .navbar-nav a:hover::after {
+        transform: scaleX(0.5);
+      }
+      .menu {
+        padding: 8rem 7% 1.4rem;
+      }
+
+      .menu h2 {
+        text-align: center;
+        font-size: 2.6rem;
+        margin-bottom: 3rem;
+      }
+
+      .menu h2 span {
+        color: var(--primary);
+      }
+
+      .menu .row {
+        display: flex;
+        flex-direction: column; /* Ubah flex-direction menjadi column */
+        align-items: center;
+      }
+
+      /* Style Img */
+      .menu .row .img {
+        flex: 1 1 5rem;
+      }
+
+      .menu .row .img img {
+        width: 100%;
+        border-radius: 20%;
+      }
+      .menu .menu-card img {
+        width: 50%;
+        height: 50%;
+        border-radius: 20%;
+        object-fit: cover;
+        text-align: center;
+      }
+
+      /* Style text */
+      .menu .row .content {
+        flex: 1 1 5rem;
+        padding: 0 1rem;
+      }
+
+      .menu .row .content h2 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+      }
+
+      .menu .row .content p {
+        flex: 1 1 35rem;
+        padding: 0 1rem;
+        padding: 0;
+        margin-bottom: 0.1rem;
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 1.6;
+        text-align: center;
+        max-width: 30rem;
+        margin: auto;
+      }
+
+      .menu .row .menu-card-harga {
+        font-weight: bold;
+        font-size: 2rem;
+        color: #666;
+      }
+
+      /* Footer */
+      footer {
+        background-color: #b6895b;
+        text-align: center;
+        padding: 1rem 0 3rem;
+        margin-top: 3rem;
+      }
+
+      footer .socials {
+        padding: 1rem 0;
+      }
+
+      footer .socials a {
+        color: #fff;
+        margin: 1rem;
+      }
+
+      footer .socials a:hover,
+      footer .links a:hover {
+        color: black;
+      }
+
+      footer .links {
+        margin-bottom: 1.4rem;
+      }
+
+      footer .links a {
+        color: #fff;
+        padding: 0.7rem 1rem;
+      }
+
+      footer .credit {
+        font-size: 0.8rem;
+      }
+
+      footer .credit a {
+        color: black;
+        font-weight: 700;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+        <a href="#" class="navbar-logo">Sudut<span>Temu</span></a>   
+        <div class="navbar-nav">
+          <a href="index.html#menu">Menu</a>
+        </div>
+    </nav>
+
+    <section class="menu" id="menu">
+      <h2>Es Cream</h2>
+
+      <div class="row">
+        <div class="img">
+          <img src="img/menu/8.jpg" alt="EsCream" />
+        </div>
+
+        <p class="menu-card-price">IDR 15k</p>
+
+        <div class="content">
+          <p>
+            Es krim adalah minuman dingin yang lezat, dengan rasa manis dan tekstur yang lembut. 
+            Dengan berbagai varian rasa, es krim menjadi pilihan sempurna untuk menghilangkan dahaga dan menemani hari yang cerah.
+
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="social">
+        <a href="#"><i data-feather="instagram"></i></a>
+        <a href="#"><i data-feather="twitter"></i></a>
+      </div>
+
+      <div class="credit">
+        <p>Created by <a href="">AliSanni</a> | &copy; 2025</p>
+      </div>
+    </footer>
+
+    <!-- Father Icons -->
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>
