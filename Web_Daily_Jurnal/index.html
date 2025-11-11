@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>My Daily Journal</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="site-nav">
+      <div class="nav-left">
+        <div class="logo">My Daily Journal</div>
+      </div>
+
+      <div class="nav-right">
+        <ul class="nav-menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#article">Article</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+        </ul>
+
+        <button id="lightBtn" class="theme-btn" aria-label="Light theme">
+          ☀️
+        </button>
+        <button id="blueBtn" class="theme-btn" aria-label="Blue theme">
+          🌙
+        </button>
+      </div>
+    </nav>
+
+    <header id="home" class="hero">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <h1>Mencatat apa yang ingin di catat</h1>
+          <p class="lead">
+            Mencatat semua kegiatan sehari-hari yang ada tanpa terkecuali
+          </p>
+          <div class="timestamp" id="timestamp">--/--/---- --:--:--</div>
+        </div>
+
+        <div class="hero-image">
+          <img src="asset/udinus.webp" alt="hero image" />
+        </div>
+      </div>
+    </header>
+
+    <section id="article" class="section article-section">
+      <div class="container">
+        <h2 class="section-title">Article</h2>
+
+        <div class="cards-grid">
+          <article class="card">
+            <img src="asset/Dikampus.webp" alt="University Campus" />
+            <div class="card-body">
+              <h3>Di Kampus</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+                facere mollitia libero laboriosam quidem ducimus temporibus,
+                repellendus eaque minima quaerat!
+              </p>
+              <div class="card-footer">Last updated 3 mins ago</div>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="asset/dikelas.jpeg" alt="Ruang Kelas" />
+            <div class="card-body">
+              <h3>Di Kelas</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aspernatur assumenda, quod unde voluptates a illum quia aliquid
+                necessitatibus perspiciatis dolore?
+              </p>
+              <div class="card-footer">Last updated 3 mins ago</div>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="asset/belajar.jpeg" alt="Kelompok Belajar" />
+            <div class="card-body">
+              <h3>Kelompok Belajar</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
+                laudantium.
+              </p>
+              <div class="card-footer">Last updated 3 mins ago</div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section gallery-section">
+      <div class="container">
+        <h2 class="section-title">Gallery</h2>
+        <div class="gallery-grid">
+          <img src="asset/Gunung-semeru.jpg" alt="g1" />
+          <img src="asset/gunung-sumbing.webp" alt="g2" />
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
