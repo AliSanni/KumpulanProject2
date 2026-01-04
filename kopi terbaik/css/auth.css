@@ -1,0 +1,163 @@
+.auth-page {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url("../img/header-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-card {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 2.5rem;
+  border-radius: 1rem;
+  width: 90%;
+  max-width: 620px;
+  min-height: 360px;
+  color: #fff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.auth-card h3 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.auth-card input {
+  width: 100%;
+  max-width: 480px;
+  padding: 0.9rem;
+  margin: 0 0 1rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.auth-card button {
+  width: 100%;
+  max-width: 480px;
+  padding: 0.95rem;
+  background: var(--primary);
+  color: white;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.auth-message {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  color: #3c9df7;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: #1e293b;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar h3 {
+  color: white;
+  margin: 0;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* FORM */
+.form-box {
+  width: 100%;
+  max-width: 480px;
+  margin: 1rem 0;
+}
+
+.form-box input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.form-box button {
+  padding: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.auth-link {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.auth-link a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.auth-link a:hover {
+  text-decoration: underline;
+}
+
+.home-btn {
+  display: flex;
+  gap: 12px;
+  margin-top: 1rem;
+  width: 100%;
+  max-width: 480px;
+}
+
+.home-btn a {
+  flex: 1;
+  min-width: 120px;
+  text-align: center;
+  padding: 12px;
+  background: var(--primary);
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.home-btn a:last-child {
+  background: transparent;
+  border: 1px solid white;
+}
+
+.home-btn a:hover {
+  opacity: 0.95;
+}
+
+@media (max-width: 480px) {
+  .auth-card {
+    padding: 1.5rem;
+  }
+  .home-btn {
+    flex-direction: column;
+    gap: 8px;
+    align-items: stretch;
+  }
+  .home-btn a {
+    width: 100%;
+  }
+}
